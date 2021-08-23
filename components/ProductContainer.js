@@ -1,30 +1,43 @@
 import React from "react";
-import { ScrollView, Text, View } from "react-native";
+import {
+  Dimensions,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import ProductCard from "./ProductCard";
+
+const { width } = Dimensions.get("window");
 
 const ProductContainer = (props) => {
   return (
-    <View
-      style={{
-        elevation: 8,
-        backgroundColor: "#f2f2f2",
-        marginVertical: 15,
-        padding: 10,
-      }}
-    >
-      <Text
+    <TouchableOpacity>
+      <ProductCard data={props} />
+      {/* <View
         style={{
-          backgroundColor: "green",
-          alignItems: "center",
-          textAlign: "center",
-          padding: 5,
+          elevation: 8,
+          backgroundColor: "#f2f2f2",
+          marginVertical: 15,
+          padding: 10,
+          width: width / 2,
         }}
       >
-        {props.object.id}
-      </Text>
-      <Text style={{ fontSize: 20 }}>{props.object.name}</Text>
-      <Text>{props.object.price}</Text>
-      <Text>{props.object.description}</Text>
-    </View>
+        <Text
+          style={{
+            backgroundColor: "green",
+            alignItems: "center",
+            textAlign: "center",
+            padding: 5,
+          }}
+        >
+          {props.object.id}
+        </Text>
+        <Text style={{ fontSize: 20 }}>{props.object.name}</Text>
+        <Text>{props.object.price}</Text>
+        <Text>{props.object.description}</Text>
+      </View> */}
+    </TouchableOpacity>
   );
 };
 

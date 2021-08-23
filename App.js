@@ -1,6 +1,14 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { FlatList, ScrollView, StyleSheet, Text, View } from "react-native";
+import {
+  FlatList,
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 
 import products from "./assets/data/products.json";
 import ProductContainer from "./components/ProductContainer";
@@ -9,11 +17,11 @@ import ProductContainer from "./components/ProductContainer";
 export default function App() {
   return (
     <>
-      <ScrollView>
+      <SafeAreaView style={{ marginHorizontal: 20 }}>
         <View style={{ alignItems: "center" }}>
-          <Text>Our Shop</Text>
+          <Text style={{ fontSize: 30, marginTop: 30 }}>Our Shop</Text>
         </View>
-        <View>
+        <ScrollView>
           {products.length > 0 ? (
             products.map((object) => {
               return <ProductContainer object={object} />;
@@ -21,8 +29,8 @@ export default function App() {
           ) : (
             <Text>No products available</Text>
           )}
-        </View>
-      </ScrollView>
+        </ScrollView>
+      </SafeAreaView>
     </>
   );
 }
