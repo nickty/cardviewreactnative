@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Mango",
+    "price": 120,
+    "description": "This is description for mango"
+  },
+  {
+    "id": 2,
+    "name": "Banana",
+    "price": 120,
+    "description": "This is description for mango"
+  },
+  {
+    "id": 3,
+    "name": "Potato",
+    "price": 120,
+    "description": "This is description for mango"
+  },
+  {
+    "id": 4,
+    "name": "Apple",
+    "price": 120,
+    "description": "This is description for mango"
+  },
+  {
+    "id": 5,
+    "name": "Orange",
+    "price": 120,
+    "description": "This is description for mango"
+  },
+  {
+    "id": 6,
+    "name": "Orange",
+    "price": 120,
+    "description": "This is description for mango"
+  },
+  {
+    "id": 7,
+    "name": "Orange",
+    "price": 120,
+    "description": "This is description for mango"
+  }
+]
